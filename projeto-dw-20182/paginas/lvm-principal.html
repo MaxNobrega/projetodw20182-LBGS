@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt_BR'">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="../css/sidebar.css">
+	
+	<!--Incorporando o fonte awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Proj</title>
+</head>
+
+<body>
+	<div class="container-fluid mt-2">
+		<section class="row mt-4">
+			<nav class="col-md-2 d-none d-md-block shadow-sm  bg-light sidebar">
+				<div class="sidebar-sticky">
+					
+					<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+						<span>Menu Principal</span><!--Titulo do sidebar-->
+					</h6><!--Titulo-->
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link " href="../index.html">
+								<span data-feather="home"></span>
+								Página Inicial
+							</a>
+						</li><!--Primeiro item da lista e ele está ativo-->
+						
+						<li class="nav-item">
+							<a class="nav-link" href="./rede-principal.html">
+								<span data-feather="bar-chart-2"></span>
+								Rede
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="./disco-principal.html">
+								<span data-feather="bar-chart-2"></span>
+								Gerenciamento de Disco
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link active" href="./lvm-principal.html">
+								<span data-feather="bar-chart-2"></span>
+								LVM
+							</a>
+						</li>
+						
+						
+					</ul><!--Lista de itens genéricos da sidebar-->
+					
+					<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+						<span>Rede</span><!--Titulo do sidebar-->
+					</h6><!--Titulo-->
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link " href="./rede-principal.html#Listagem-redes">
+								<span data-feather="home"></span>
+								Listagem das interfaces de rede
+							</a>
+						</li><!--Primeiro item da lista-->
+						
+					</ul><!--Lista de itens relacionados a lvm da sidebar-->
+					
+					<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+						<span>Gerenciamento de disco</span><!--Titulo do sidebar-->
+					</h6><!--Titulo-->
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link " href="./disco-principal.html#Listagem-discos">
+								<span data-feather="home"></span>
+								Listagem de Discos
+							</a>
+						</li><!--Primeiro item da lista-->
+						
+						<li class="nav-item">
+							<a class="nav-link" href="./disco-principal.html">
+								<span data-feather="bar-chart-2"></span>
+								Gravação de imagens com o dd
+							</a>
+						</li><!--Segundo item da lista-->
+						
+					</ul><!--Lista de itens relacionados a lvm da sidebar-->
+					
+					<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+						<span>LVM</span><!--Titulo do sidebar-->
+					</h6><!--Titulo-->
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link " href="#">
+								<span data-feather="home"></span>
+								Gerenciamento de Volumes Físicos
+							</a>
+						</li><!--Primeiro item da lista-->
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span data-feather="bar-chart-2"></span>
+								Gerenciamento de Grupos de Volumes Físicos
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span data-feather="bar-chart-2"></span>
+								Gerenciamento de Volumes Lógicos
+							</a>
+						</li>
+						
+					</ul><!--Lista de itens relacionados a lvm da sidebar-->
+					
+					
+				</div><!--Fim da sidebar-->
+				
+				
+			</nav><!--Fim da Coluna da Sidebar-->
+			
+			
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 bg-white p-2" >
+				
+				<table class="table table-borderless">
+					
+					<tr>
+						<th>
+							<h2>Gerenciamento de volumes lógicos</h2>
+						</th>
+					</tr><!--Fim da linha 1 da tabela-->
+					<tr>
+						<td>
+							<div class="card d-flex flex-row shadow-sm mb-5 bg-white rounded">
+								<div class="prepend-icon p-3 d-flex align-items-center bg-danger">
+									<span data-feather="alert-circle"></span>
+								</div>
+								<div class="p-2">
+									<p>Gerenciamento de Volumes Físicos</p>
+								</div>
+							</div><!--Card 1 menu principal-->
+						</td>
+						<td>
+							<div class="card d-flex flex-row shadow-sm mb-5 bg-white rounded">
+								<div class="prepend-icon p-3 d-flex align-items-center bg-danger">
+									<span data-feather="alert-circle"></span>
+								</div>
+								<div class="p-2">
+									<p>Gerenciamento de Grupos de Volumes Físicos</p>
+								</div>
+							</div><!--Card 2 menu principal-->
+						</td>
+						<td>
+							<div class="card d-flex flex-row shadow-sm mb-5 bg-white rounded">
+								<div class="prepend-icon p-3 d-flex align-items-center bg-danger">
+									<span data-feather="alert-circle"></span>
+								</div>
+								<div class="p-2">
+									<p>Gerenciamento de Volumes Lógicos</p>
+								</div>
+							</div><!--Card 3 menu principal-->
+						</td>
+					</tr><!--Fim da linha 2 da tabela-->
+					
+				</table><!--Fim da area principal-->
+				
+			</section><!--Fim da primeira linha-->
+		</main><!--Fim da área central da página-->
+		
+	</div><!--Fim do  Container-->
+	
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
