@@ -5,17 +5,15 @@
 
 ### Qual é o foco das ferramentas do projeto?
     R. O foco está voltado em duas frentes: 
-	+ Gerenciamento de disco 
-        + Gerenciamento de rede
+	* Gerenciamento de disco 
+        * Gerenciamento de rede
 
 ### O que é pretendido ser implementado no gerenciamento de disco?
-    R. Inicialmente, gerenciamento de interfaces de rede cabeadas e 
-sem-fio.
+    R. Inicialmente, gerenciamento de interfaces de rede cabeadas e sem-fio.
 
 
 ### O que é pretendido ser implementado no gerenciamento de disco?
-    R. Inicialmente, gerenciamento de lvm, discos em geral e programa 
-dd.
+    R. Inicialmente, gerenciamento de lvm, discos em geral e o programa dd.
 
 ### Quem são os envolvidos?
     R. Como é  um projeto de faculdade, só estão no projeto
@@ -28,5 +26,5 @@ dd.
 
 ### Existe alguma possibilidade de expansão do projeto?
     R. Vai depender do futuro, caso os integrantes do grupo continuarem 
-        com vontade de avançar, certamente é bem possível que continue.
+	com vontade de avançar, certamente é bem possível que continue.
  
