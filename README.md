@@ -8,7 +8,7 @@
 	* Gerenciamento de disco 
         * Gerenciamento de rede
 
-### O que é pretendido ser implementado no gerenciamento de disco?
+### O que é pretendido ser implementado no gerenciamento de rede?
     R. Inicialmente, gerenciamento de interfaces de rede cabeadas e sem-fio.
 
 
