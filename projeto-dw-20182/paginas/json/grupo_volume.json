@@ -1,0 +1,23 @@
+[
+    {
+    "Nome_GV" : " ", 
+	"ID_do_Sistema" : " ",
+	"Formato" : " ",
+	"Area_de_Metadata" : " ",
+	"Sequencia_de_Metadata" : " ",
+	"Acesso_da_GV" : " ",
+	"Status_da_GV" : " ",
+	"LV_Máx" : " ",
+	"LV_Atual" : " ",
+	"LV_Aberto" : " ",
+	"PV_Máx" : " ",
+	"PV_Atual" : " ",
+	"PV_Ativo" : " ",
+	"Tamanho_GV" : " ",
+	"Tamanho_PE" : " ",
+	"PE_Total" : " ",
+	"PE_Alocado" : " ",
+	"PE_Livre" : " ",
+	"UUID_do_GV" : " "
+    }
+]

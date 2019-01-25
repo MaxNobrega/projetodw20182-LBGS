@@ -1,0 +1,27 @@
+[
+    {
+        "Nome_PV": "",
+		"Nome_VG" : "",
+		"Tamanho_PV" : "",
+		"Alocavel" : "",
+		"Tamanho_PE" : "",
+		"PE_Total" : "",
+		"PE_Livre" : "",
+		"PE_Alocado" : "",
+		"PV_UUID" : ""
+	},
+	{
+        "Nome_PV" : "pv_01",
+		"Nome_VG" : " ",
+		"Tamanho_PV" : "10GB",
+		"Alocavel" : "0GB",
+		"Tamanho_PE" : "0",
+		"PE_Total" : "0",
+		"PE_Livre" : "0",
+		"PE_Alocado" : "10",
+		"PV_UUID" : "ERJ-VOIRJGRTJGRTJG-ROIJG4JFEOIFJRELJG-EFKRGPORJFJ"
+    }
+]
+
+
+		

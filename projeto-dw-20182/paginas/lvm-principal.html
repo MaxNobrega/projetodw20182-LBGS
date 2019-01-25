@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/main.css">
 	
 	<!--Incorporando o fonte awesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -166,6 +167,162 @@
 						</td>
 					</tr><!--Fim da linha 2 da tabela-->
 					
+					<table class="table table-borderless" id="lvmtvolfisico"><!--Inicio da parte de Gerenciamento de Volumes Fisicos-->
+						
+							<thead>
+								<tr><h4>Gerenciamento de Volumes Fisicos</h4></tr>
+								<tr><h5>Listagem dos Volumes Fisicos</h5></tr>
+								<tr>
+									<th>Nome PV</th>
+									<th>Nome VG</th>
+									<th>Tamanho PV</th>
+									<th>Alocavel</th>
+									<th>Tamanho PE</th>
+									<th>PE Total</th>
+									<th>PE Livre</th>
+									<th>PE Alocado</th>
+									<th>PV UUID</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+					</table><!--Fim da parte de Gerenciamento de Volumes Fisicos-->
+					<form id="volumefisico">
+						<div id="entradanovopv" class="py-5">
+							<h5>Selecione uma partição para criar um volume físico</h5>
+							<label for="entradalvmfisico">Partições disponíveis para criação: </label><!--Cabeçalho-->
+							<select name="entradalvmfisico" class="custom-select col-2" id="novolvmvolfisico">
+							  <option value=""></option>
+							  <option value="/dev/sda1">/dev/sda1</option>
+							  <option value="/dev/sda2">/dev/sda2</option>
+							</select>
+							<button id="botaonovopv" type="submit" class="btn btn-danger ml-2" onclick="enviarNovoVolumeFisico()">Enviar</button>
+						</div>
+
+						<div id="removerpv" class="py-5">
+								<h5>Selecione uma volume físico pela partição para ser removido</h5>
+								<label for="removerlvmfisico">Partições disponíveis para remoção: </label><!--Cabeçalho-->
+								<select name="removerlvmfisico" class="custom-select col-2" id="remlvmvolfisico">
+								  <option value=""></option>
+								  <option value="/dev/sda1">/dev/sda1</option>
+								  <option value="/dev/sda2">/dev/sda2</option>
+								</select>
+								<button id="botaoremovepv" type="submit" class="btn btn-danger ml-2" onclick="enviarRemoverVolumeFisico()">Enviar</button>
+							</div>
+					</form>
+
+					<table class="table table-borderless" id="lvmtgrpvolume"><!--Inicio da parte de Gerenciamento de Grupos de  Volumes-->
+						<thead>
+								<tr><h4>Gerenciamento dos Grupos de Volumes</h4></tr>
+								<tr><h5>Listagem dos Grupos de Volumes</h5></tr>
+								<tr>
+									<th>Nome GV</th>
+									<th>ID do Sistema</th>
+									<th>Formato</th>
+									<th>Area de Metadata</th>
+									<th>Sequencia de Metadata</th>
+									<th>Acesso da GV</th>
+									<th>Status da GV</th>
+									<th>LV Máx</th>
+									<th>LV Atual</th>
+									<th>LV Aberto</th>
+									<th>PV Máx</th>
+									<th>PV Atual</th>
+									<th>PV Ativo</th>
+									<th>Tamanho GV</th>
+									<th>Tamanho PE</th>
+									<th>PE Total</th>
+									<th>PE Alocado</th>
+									<th>PE Livre</th>
+									<th>UUID do GV</th>
+								</tr>
+						<thead>
+					</table><!--Fim da parte de Gerenciamento de Grupos de  Volumes-->
+					<form id="grupovolumes">
+						<div id="entradanovogv" class="pt-5">
+								<h5>Selecione um volume físico para ser adicionado ao grupo de volume</h5>
+								
+								<div class="form-row my-4 ">
+									<label for="entradalvmgv">Partições disponíveis para criação: </label><!--Cabeçalho-->
+									<select name="entradalvmgv" class="custom-select col-2" id="novolvmgv">
+									  <option value=""></option>
+									  <option value="/dev/sda1">/dev/sda1</option>
+									  <option value="/dev/sda2">/dev/sda2</option>
+									</select>
+								</div>
+								<div class="form-row my-4">
+									<label for="entradanovogv">Digite o nome do grupo de volumes físicos: </label>
+									<input type="text" name="entradanovogv" id="entradanomenovogv" class="form-control col-2">
+									<button id="botaonovogv" type="submit" class="btn btn-danger ml-2" onclick="enviarNovoGrupoVolume()">Enviar</button>
+								</div>
+						</div>
+					
+						<div id="removergv" class="py-5">
+								<h5>Selecione um grupo de volumes a ser removido</h5>
+								<label for="removerlvmgv">Grupo de Volumes  disponíveis para remoção: </label><!--Cabeçalho-->
+								<select name="removerlvmgv" class="custom-select col-2" id="removelvmgv">
+								  <option value=""></option>
+								  <option value="vg_1">vg_1</option>
+								  <option value="vg_2">vg_2</option>
+								</select>
+								<button id="botaoremovegv" type="submit" class="btn btn-danger ml-2" onclick="enviarRemoverGrupoVolume()">Enviar</button>
+						</div>
+					</form>
+
+					<table class="table table-borderless" id="lvmtvollogico"><!--Inicio da parte de Gerenciamento de Volumes Lógicos-->
+						<thead>
+								<tr><h4>Gerenciamento dos Volumes Lógicos</h4></tr>
+								<tr><h5>Listagem dos Volumes Lógicos</h5></tr>
+								<tr>
+									<th>Caminho VL</th>
+									<th>Nome VL</th>
+									<th>Nome GV</th>
+									<th>UUID do VL</th>
+									<th>Acesso ao VL</th>
+									<th>Timestamp do VL</th>
+									<th>Status do VL</th>
+									<th>Abertura do VL</th>
+									<th>Tamanho do VL</th>
+									<th>LE Atual</th>
+									<th>Segmentos</th>
+									<th>Alocação</th>
+									<th>Read ahead sec.</th>
+									<th>Block device</th>
+								</tr>
+						</thead>
+					</table><!--Fim da parte de Gerenciamento de Volumes Lógicos-->
+					<form id="volumeslogicos">
+							<div id="entradanovovl" class="pt-5">
+									<h5>Selecione um grupo de volume para ser adicionado ao novo volume logico</h5>
+									
+									<div class="form-row my-4 ">
+										<label for="entradalvmvl">Grupo de Volumes disponíveis para criação do volume lógico: </label><!--Cabeçalho-->
+										<select name="entradalvmvl" class="custom-select col-2  px-3" id="novolvmvl">
+										  <option value=""></option>
+										  <option value="vg_1">vg_1</option>
+										  <option value="vg_2">vg_2</option>
+										</select>
+									</div>
+									<div class="form-row my-4">
+										<label for="entradanovogv">Digite o nome do novo volume lógico: </label>
+										<input type="text" name="entradanovogv" id="entradanomenovogv" class="form-control col-2">
+										<button id="botaonovovl" type="submit" class="btn btn-danger ml-2" onclick="enviarNovoVolumeLogico()">Enviar</button>
+									</div>
+							</div>
+						
+							<div id="removergv" class="py-5">
+									<h5>Selecione um volume lógico a ser removido</h5>
+									<label for="removerlvmvl">Volumes Lógicos disponíveis para remoção: </label><!--Cabeçalho-->
+									<select name="removerlvmvl" class="custom-select col-2 px-3" id="removelvmvl">
+									  <option value=""></option>
+									  <option value="vol_log_1">vol_log_1</option>
+									  <option value="vol_log_2">vol_log_2</option>
+									</select>
+									<button id="botaoremovevl" type="submit" class="btn btn-danger ml-2" onclick="enviarRemoverVolumeLogico()">Enviar</button>
+							</div>
+						</form>
+
 				</table><!--Fim da area principal-->
 				
 			</section><!--Fim da primeira linha-->
@@ -175,6 +332,7 @@
 	
 	
 	<!-- Optional JavaScript -->
+	<script src="../js/lvm-principal.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

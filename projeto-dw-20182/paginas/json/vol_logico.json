@@ -1,0 +1,19 @@
+[
+    {
+    "Caminho_VL " : "",
+	"Nome_VL" : "",
+	"Nome_GV" : "",
+	"UUID_do_VL " : "",
+	"Acesso_ao_VL   " : "",
+	"Timestamp_do_VL" : "",
+	"Status_do_VL   " : "",
+	"Abertura_do_VL " : "",
+	"Tamanho_do_VL  " : "",
+	"LE_Atual   " : "",
+	"Segmentos  " : "",
+	"Alocação   " : "",
+	"Read_ahead_sec" : "",
+	"Block_device   " : ""
+    }
+    
+]
