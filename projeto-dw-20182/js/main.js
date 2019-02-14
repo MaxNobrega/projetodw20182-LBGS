@@ -1,7 +1,7 @@
 // TODO
 const Cards = document.querySelector('.cards')
 
-fetch('json/cards.js')
+fetch('json/cards.json')
   .then(res => res.json())
   .then(json => showCards(json))
 

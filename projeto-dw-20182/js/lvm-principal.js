@@ -76,7 +76,7 @@ function iniciojs(){
           }
       }
 
-      fetch('json/vol_logico.js')
+      fetch('json/vol_logico.json')
           .then(res => res.json())
           .then(json => VolLogico_json(json))
 
@@ -105,7 +105,7 @@ function iniciojs(){
           }
     }
 
-    fetch('json/grupo_volume.js')
+    fetch('json/grupo_volume.json')
     .then(res => res.json())
     .then(json => grpVolume_json(json))
 
