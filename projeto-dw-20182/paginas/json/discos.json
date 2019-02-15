@@ -1,12 +1,1 @@
-[
-    {
-        "particao" : "/dev/sda1",
-        "montagem" : "/",
-        "total" : "50G",
-        "usado": "20G",
-        "livre": "30G",
-        "porcentagem" : "40%"
-    }
-
-
-]
+{"particao":"\/dev\/sda7","montagem":"\/","total":"54G","usado":"29G","livre":"23G","porcentagem":"56%"}{"particao":"\/dev\/sda8","montagem":"\/home","total":"61G","usado":"54G","livre":"3,8G","porcentagem":"94%"}{"particao":"\/dev\/sda5","montagem":"\/boot\/efi","total":"1022M","usado":"9,6M","livre":"1013M","porcentagem":"1%"}
